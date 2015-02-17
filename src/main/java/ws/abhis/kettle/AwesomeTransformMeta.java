@@ -109,12 +109,12 @@ public class AwesomeTransformMeta extends BaseStepMeta implements StepMetaInterf
         retval.append("    ").append(XMLHandler.openTag(getXmlCode("PREV2")))
                 .append(Const.CR);
 
-        for (int i = 0; i < allInputs1.length; i++) {
+        for (int i = 0; i < allInputs2.length; i++) {
             retval.append("    ")
                     .append(XMLHandler.openTag(getXmlCode("PVALS2")))
                     .append(Const.CR);
             retval.append("      ").append(
-                    XMLHandler.addTagValue(getXmlCode("VALUE2"), allInputs1[i]));
+                    XMLHandler.addTagValue(getXmlCode("VALUE2"), allInputs2[i]));
             retval.append("    ")
                     .append(XMLHandler.closeTag(getXmlCode("PVALS2")))
                     .append(Const.CR);

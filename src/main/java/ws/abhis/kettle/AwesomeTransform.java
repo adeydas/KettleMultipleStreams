@@ -38,6 +38,8 @@ public class AwesomeTransform extends BaseStep implements StepInterface {
         data = (AwesomeTransformData) sdi;
 
         List<StreamInterface> infoStreams = meta.getStepIOMeta().getInfoStreams();
+        List<StreamInterface> targetStreams = meta.getStepIOMeta().getTargetStreams();
+        String[] stepnames = meta.getStepIOMeta().getInfoStepnames();
         String stepname1 = infoStreams.get(0).getStepname();
         data.oneRowSet = findInputRowSet(stepname1);
         if (data.oneRowSet == null)
