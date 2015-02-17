@@ -1,0 +1,22 @@
+<attributes>
+    <attribute id="STREAM1" ><xmlcode>stream1</xmlcode> <repcode/> <description>Stream 1</description> <valuetype>String</valuetype> <parentid/> </attribute>
+    <attribute id="STREAM2" ><xmlcode>stream1</xmlcode> <repcode/> <description>Stream 2</description> <valuetype>String</valuetype> <parentid/> </attribute>
+
+    <attribute id="STEP1" ><xmlcode>step1</xmlcode> <repcode/> <description>Step 1</description> <valuetype>String</valuetype> <parentid/> </attribute>
+    <attribute id="STEP2" ><xmlcode>step2</xmlcode> <repcode/> <description>Step 2</description> <valuetype>String</valuetype> <parentid/> </attribute>
+
+
+    <!-- Previous step data -->
+    <attribute id="PREV1"> <xmlcode>prev</xmlcode> <repcode/> <description>Previous fields</description> <tooltip/> <parentid/> </attribute>
+
+    <!-- Previous step nested entries data -->
+    <attribute id="PVALS1"> <xmlcode>pvals</xmlcode> <repcode/> <description>Previous field value</description> <tooltip/> <parentid>PREV1</parentid> </attribute>
+    <attribute id="VALUE1"> <xmlcode>val</xmlcode> <repcode/> <description>Previous field value nested</description> <tooltip/> <parentid>PVALS1</parentid> </attribute>
+
+    <!-- Previous step data -->
+    <attribute id="PREV2"> <xmlcode>prev</xmlcode> <repcode/> <description>Previous fields</description> <tooltip/> <parentid/> </attribute>
+
+    <!-- Previous step nested entries data -->
+    <attribute id="PVALS2"> <xmlcode>pvals</xmlcode> <repcode/> <description>Previous field value</description> <tooltip/> <parentid>PREV2</parentid> </attribute>
+    <attribute id="VALUE2"> <xmlcode>val</xmlcode> <repcode/> <description>Previous field value nested</description> <tooltip/> <parentid>PVALS2</parentid> </attribute>
+</attributes>
