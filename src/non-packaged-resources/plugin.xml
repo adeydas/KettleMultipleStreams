@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+        id="AwesomeTransformM"
+        iconfile="atm.png"
+        description="AT Multiple Input"
+        tooltip="AT Multiple Input"
+        category="Tango Analytics"
+        classname="ws.abhis.kettle.AwesomeTransformMeta">
+    <libraries>
+        <library name="multiplestreams-1.0.jar"/>
+    </libraries>
+
+    <localized_category>
+        <category locale="en_US">Experimental</category>
+
+    </localized_category>
+    <localized_description>
+        <description locale="en_US">AT Multiple Input</description>
+    </localized_description>
+    <localized_tooltip>
+        <tooltip locale="en_US">AT Multiple Input</tooltip>
+    </localized_tooltip>
+
+</plugin>
