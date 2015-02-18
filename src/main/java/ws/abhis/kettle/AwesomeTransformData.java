@@ -6,7 +6,7 @@ import org.pentaho.di.trans.step.BaseStepData;
 import org.pentaho.di.trans.step.StepDataInterface;
 
 /**
- * Created by Abhishek on 2/17/2015.
+ * The Data class. Per row data is saved in instances of this class.
  */
 public class AwesomeTransformData extends BaseStepData implements StepDataInterface {
     public RowMetaInterface oneMeta, twoMeta;
