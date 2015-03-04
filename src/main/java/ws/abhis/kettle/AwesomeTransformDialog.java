@@ -288,14 +288,15 @@ public class AwesomeTransformDialog extends BaseStepDialog implements StepDialog
      */
     private void refresh() {
         try {
-            RowMetaInterface rowMetaInterface = transMeta.getPrevStepFields(stepMeta);
-            if ( rowMetaInterface != null ) {
-                String[] prevStepFieldNames = rowMetaInterface.getFieldNames();
-
-
+            RowMetaInterface rowMetaInterfaceStream1 = transMeta.getStepFields(wlStep1.getText());
+            RowMetaInterface rowMetaInterfaceStream2 = transMeta.getStepFields(wlStep2.getText());
+            if ( rowMetaInterfaceStream1 != null ) {
+                String[] prevStepFieldNames = rowMetaInterfaceStream1.getFieldNames();
                 wStream1.setItems(prevStepFieldNames);
+            }
+            if (rowMetaInterfaceStream2 != null) {
+                String[] prevStepFieldNames = rowMetaInterfaceStream2.getFieldNames();
                 wStream2.setItems(prevStepFieldNames);
-
             }
 
         } catch (KettleStepException e) {
